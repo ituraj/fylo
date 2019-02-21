@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+
+/* General */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  color: hsl(243, 87%, 12%);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  margin: 3rem;
+}
+
+#logo {
+  width: 50%;
+  height: auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  list-style: none;
+  padding: 2rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  height: 95vh;
+}
+
+.header-illustration {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Main */
+
+main {
+  background-color: hsl(240, 75%, 98%);
+  height: 100vh;
+}
+
+.main-illustration {
+  max-width: 300px;
+  height: auto;
+}
+
+.section-review {
+  height: 70%;
+  padding: 3rem;
+}
+
+.section-cta {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+  height: 30%;
+  padding: 3rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(240, 75%, 98%);
+  height: 50vh;
+  padding: 3rem;
+}
+
+/* Media Queries */
