@@ -23,7 +23,16 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0rem 3rem;
 }
 
 /* Navigation */
@@ -32,8 +41,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
-  margin: 3rem;
+  height: 10vh;
+  padding: 3rem;
 }
 
 #logo {
@@ -58,12 +67,41 @@ li a {
 /* Header */
 
 header {
-  height: 95vh;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+header section {
+  grid-column: 1/2;
 }
 
 .header-illustration {
-  max-width: 300px;
+  grid-column: 2/3;
+  max-width: 40vw;
   height: auto;
+}
+
+form {
+  margin: 1rem 3rem;
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 1rem 3.6rem 1rem 1rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 1rem 3.6rem;
+  margin-left: 1.5rem;
 }
 
 /* Main */
@@ -73,14 +111,25 @@ main {
   height: 100vh;
 }
 
-.main-illustration {
-  max-width: 300px;
-  height: auto;
+.section-review {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  height: 70%;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem;
 }
 
-.section-review {
+.main-paragraph {
+  grid-column: 1/2;
   height: 70%;
   padding: 3rem;
+}
+
+.main-illustration {
+  grid-column: 2/3;
+  max-width: 40vw;
+  height: auto;
 }
 
 .section-cta {
