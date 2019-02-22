@@ -16,23 +16,24 @@ html {
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   color: hsl(243, 87%, 12%);
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  padding: 3rem;
+  padding: 0 3rem;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 0rem 3rem;
+  padding: 1rem 3rem;
 }
 
 /* Navigation */
@@ -42,6 +43,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  margin: 0 3rem;
   padding: 3rem;
 }
 
@@ -111,19 +113,16 @@ main {
   height: 100vh;
 }
 
-.section-review {
+.section-testimonial {
   display: grid;
   grid-template-columns: 6fr 6fr;
-  height: 70%;
   justify-items: center;
   align-items: center;
   padding: 3rem;
 }
 
-.main-paragraph {
+.main-article {
   grid-column: 1/2;
-  height: 70%;
-  padding: 3rem;
 }
 
 .main-illustration {
@@ -137,6 +136,12 @@ main {
   color: hsl(240, 75%, 98%);
   height: 30%;
   padding: 3rem;
+}
+
+.quote {
+  background-color: #fff;
+  margin: 3rem 10rem 3rem 3rem;
+  padding: 1rem;
 }
 
 /* Footer */
