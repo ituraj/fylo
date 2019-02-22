@@ -11,13 +11,23 @@
     />
     <title>Fylo | Landing Page Example</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css"
+      integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css"
+      integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
       <nav>
-        <figure>
-          <img id="logo" src="images/logo.svg" alt="logo" />
-        </figure>
+        <img id="logo" src="images/logo.svg" alt="logo" />
         <ul>
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
@@ -37,7 +47,6 @@
             <button>Get Started</button>
           </form>
         </section>
-
         <figure class="header-figure">
           <img
             class="header-illustration"
@@ -60,8 +69,10 @@
                 colleagues for live collaboration. No email attachments
                 required!
                 <br />
-                <span><a href="#">See how Fylo works</a></span>
               </p>
+              <span class="see-more">
+                <a href="#">See how Fylo works<span class="circle"></span></a>
+              </span>
             </article>
             <article class="main-quote">
               <img
@@ -76,8 +87,10 @@
               </p>
               <figure class="main-quote__author">
                 <img src="images/avatar-testimonial.jpg" alt="avatar" />
-                <h3>Kyle Burton</h3>
-                <h4>Founder & CEO, Huddle</h4>
+                <figcaption class="author-name">Kyle Burton</figcaption>
+                <figcaption class="author-role">
+                  Founder & CEO, Huddle
+                </figcaption>
               </figure>
             </article>
           </div>
@@ -89,21 +102,56 @@
             />
           </figure>
         </section>
+      </main>
+      <footer>
         <section class="section-cta">
-          <p>
-            Get early access today It only takes a minute to sign up and our
-            free starter tier is extremely generous. If you have any questions,
-            our support team would be happy to help you.
-          </p>
+          <article>
+            <h3>Get early access today</h3>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </article>
           <form action="onSubmit">
-            <input type="email" />
+            <input type="email" placeholder="email@example.com" />
             <button>Get Started For Free</button>
           </form>
         </section>
-      </main>
-
-      <footer>
-        Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
+        <section class="section-footer">
+          <img id="footer-logo" src="images/logo-white.svg" alt="logo" />
+          <article class="col-1">
+            <span>
+              <img src="images/icon-phone.svg" alt="phone" />
+              <a href="#">+1-543-123-4567</a>
+            </span>
+            <span>
+              <img src="images/icon-email.svg" alt="email" />
+              <a href="#">email@example.com</a>
+            </span>
+          </article>
+          <article class="col-2">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </article>
+          <article class="col-3">
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terps</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </article>
+          <article class="col-4">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </article>
+        </section>
+        <!-- Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
         Us Terms Privacy
         <p class="attribution">
           This page started life as a challenge on
@@ -111,7 +159,7 @@
             >Frontend Mentor</a
           >
           🎉
-        </p>
+        </p> -->
       </footer>
     </div>
   </body>
