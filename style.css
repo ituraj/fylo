@@ -94,23 +94,22 @@ form {
 input[type="email"] {
   width: 50%;
   padding: 1rem 3.6rem 1rem 1rem;
-  margin: 8px 0;
+  margin: 1rem 0 1rem 1rem;
   box-sizing: border-box;
 }
 
 button {
   background-color: hsl(224, 93%, 58%);
+  border: none;
   border-radius: 0.4rem;
   color: #fff;
   padding: 1rem 3.6rem;
-  margin-left: 1.5rem;
 }
 
 /* Main */
 
 main {
   background-color: hsl(240, 75%, 98%);
-  height: 100vh;
 }
 
 .section-testimonial {
@@ -125,23 +124,77 @@ main {
   grid-column: 1/2;
 }
 
-.main-illustration {
+.main-figure {
   grid-column: 2/3;
+}
+
+.main-illustration {
   max-width: 40vw;
   height: auto;
+}
+
+.main-quote {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #fff;
+  margin: 3rem 10rem 3rem 3rem;
+  padding: 1rem;
+}
+
+.quote-icon {
+  padding: 1rem 3rem 0 3rem;
+}
+
+.main-quote__author {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 2fr 2fr;
+  padding: 1rem 3rem;
+}
+
+.main-quote__author img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border: none;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.main-quote__author h3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.main-quote__author h4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.main-quote__author h3,
+.main-quote__author h4 {
+  margin-left: -2rem;
 }
 
 .section-cta {
   background-color: hsl(238, 22%, 44%);
   color: hsl(240, 75%, 98%);
-  height: 30%;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.section-cta p {
+  grid-column: 1/2;
   padding: 3rem;
 }
 
-.quote {
-  background-color: #fff;
-  margin: 3rem 10rem 3rem 3rem;
-  padding: 1rem;
+.section-cta form {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem;
 }
 
 /* Footer */
